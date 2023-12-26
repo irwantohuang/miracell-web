@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "./section/header.css";
+@import "./section/home.css";
+@import "./section/tagline.css";
+@import "./section/category.css";
+@import "./section/shop.css";
+@import "./section/testimonial.css";
+@import "./section/footer.css";
+
+:root {
+  --primary-100: #e43850;
+  --primary-200: #ff6f7c;
+  --primary-300: #ffd8dd;
+  --accent-100: #393939;
+  --accent-200: #bebebe;
+  --text-100: #232121;
+  --text-200: #4b4848;
+  --bg-100: #fbfbfb;
+  --bg-200: #f1f1f1;
+  --bg-300: #c8c8c8;
+  --overlay-color: hsla(216, 14%, 14%, 1);
+
+  /* Transition */
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  position: relative;
+}
+
+/* Reused Style */
+.container {
+  max-width: 1320px;
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: 140px;
+}
+
+.btn {
+  color: var(--bg-100);
+  font-size: 1.2em;
+  font-weight: 700;
+  max-width: max-content;
+  padding: 12px 28px;
+  border-radius: 100px;
+  transition: var(--transition-1);
+  will-change: transform;
+}
+
+.btn-primary {
+  background-color: var(--primary-300);
+}
+
+.btn-outline {
+  border: 2px solid var(--bg-100);
+}
+
+.btn:is(:hover, :focus-visible),
+.wa-icon:hover { 
+  transform: translateY(-4px); 
+}
+
+.btn-primary,
+.btn-outline:is(:hover, :focus-visible) {
+  background-color: var(--bg-100);
+  color: var(--primary-100);
+}
+
+/* Whatsapp icon */
+.wa-icon {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 4.5em;
+  color: #25d366;
+  transition: var(--transition-1);
+}
+
+/* Breakpoints */
+
+/* Large */
+@media (max-width: 1024px) {
+  html {
+    font-size: 95%;
+  }
+  
+  .container {
+    max-width: 980px;
+  }
+}
+
+/* Medium */
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Small */
+@media (max-width: 640px) {
+  html {
+    font-size: 80%;
+  }
+
+  .container {
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 75%;
+  }
+  
+  .container {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,29 @@
+.section.category {
+    padding-block: 80px;
+}
+
+.category-content {
+  max-width: 85%;
+  gap: 20px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.category-image {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Medium */
+@media (max-width: 768px) {
+  .section.category {
+    padding-block: 40px;
+}
+
+  .category-content {
+    max-width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
