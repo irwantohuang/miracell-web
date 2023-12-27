@@ -17,7 +17,7 @@
 .content-title {
   position: relative;
   font-size: 1em;
-  color: var(--primary-200);
+  color: var(--primary-300);
 }
 
 .content-title::after {
@@ -27,7 +27,7 @@
   position: absolute;
   bottom: -2px;
   left: 0;
-  background-color: var(--primary-200);
+  background-color: var(--primary-300);
 }
 
 .contact-list,
@@ -42,7 +42,7 @@
   margin-block: 0.5em;
   font-size: 1em;
   font-weight: 500;
-  color: var(--bg-300);
+  color: var(--bg-200);
   opacity: 0.8;
   transition: var(--transition-1);
 }
@@ -51,7 +51,7 @@
 .store-list li:hover,
 .link-list li:hover {
   transform: translateY(-2px);
-  color: var(--primary-200);
+  color: var(--primary-300);
 }
 
 .contact-list li i {

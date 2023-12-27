@@ -53,11 +53,11 @@
 }
 
 .card-desc {
-  background-color: var(--primary-100);
+  background-color: var(--text-200);
   text-align: center;
   font-size: 1em;
   font-weight: 700;
-  color: var(--bg-100);
+  color: var(--primary-300);
   transition: var(--transition-1);
 }
 
@@ -76,7 +76,7 @@
 }
 
 .safety .shop-tagline {
-  color: var(--bg-300);
+  color: var(--bg-200);
 }
 
 .safety .shop-title {
@@ -84,13 +84,13 @@
 }
 
 .safety .card-desc {
-  background-color: var(--primary-200);
-  color: var(--bg-100);
+  background-color: var(--text-200);
+  color: var(--primary-300);
 }
 
 .safety .card-desc:hover {
-  background-color: var(--primary-100);
-  color: var(--bg-100);
+  background-color: var(--primary-300);
+  color: var(--text-100);
 }
 
 .safety .card-img {
