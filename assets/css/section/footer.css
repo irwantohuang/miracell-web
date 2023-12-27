@@ -11,7 +11,8 @@
 .footer-section {
   display: flex;
   align-items: start;
-  justify-content: space-between;
+  gap: 120px;
+  /* justify-content: space-around; */
 }
 
 .content-title {
@@ -58,11 +59,36 @@
   margin-right: 0.5em;
 }
 
+.footer-bottom {
+  /* background-color: aliceblue; */
+  font-size: .85em;
+  font-weight: bold;
+  color: var(--bg-300);
+  opacity: .75;
+  margin-block-start: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-bottom a {
+  color: var(--primary-300);
+  padding-inline: 4px;
+  transition: var(--transition-1);
+}
+
+.footer-bottom a:hover {
+  transform: translateY(-2px);
+}
+
 
 /* Medium */
 @media (max-width: 768px) {
   .footer-content {
     max-width: 90%;
+  }
+  .footer-section {
+    gap: 60px;
   }
 }
 

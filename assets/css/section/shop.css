@@ -49,7 +49,7 @@
 .card-img {
   width: 100%;
   height: 380px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .card-desc {
@@ -93,9 +93,6 @@
   color: var(--text-100);
 }
 
-.safety .card-img {
-  object-fit: contain;
-}
 
 
 /* ===== Media Query ===== */
